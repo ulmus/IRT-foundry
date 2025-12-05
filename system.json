@@ -1,0 +1,22 @@
+{
+    "id": "irt",
+    "title": "I Rikets Tjänst",
+    "description": "The game system for the RPG I Rikets Tjänst.",
+    "version": "1.0.0",
+    "compatibility": {
+        "minimum": 13,
+        "verified": 13
+    },
+    "authors": [
+        {
+            "name": "Jens Alm",
+            "url": "https://familjenalm.org",
+            "email": "jens@familjenalm.org",
+            "discord": "ulmus#9722"
+        }
+    ],
+    "license": "MIT",
+    "template": "template.json",
+    "esmodules": ["module/irt.mjs"],
+    "styles": ["styles/irt.css"]
+}

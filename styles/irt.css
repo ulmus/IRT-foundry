@@ -1,0 +1,131 @@
+.irt .window-content {
+  background: #e3e3e3;
+  font-family: "Signika", sans-serif;
+  color: #191813;
+}
+
+.irt .sheet-header {
+  flex: 0 0 100px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.irt .sheet-header .profile-img {
+  flex: 0 0 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.irt .sheet-header .header-fields {
+  flex: 1;
+}
+
+.irt .sheet-header h1.charname {
+  height: 50px;
+  padding: 0px;
+  margin: 5px 0;
+  border-bottom: 0;
+}
+
+.irt .sheet-header h1.charname input {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.irt .sheet-tabs {
+  flex: 0 0 32px;
+  line-height: 32px;
+  border-top: 1px solid #AAA;
+  border-bottom: 1px solid #AAA;
+}
+
+.irt .sheet-tabs .item {
+  padding: 0px 10px;
+  border-right: 1px solid #AAA;
+}
+
+.irt .sheet-tabs .item:last-child {
+  border-right: none;
+}
+
+.irt .sheet-tabs .item.active {
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+.irt .sheet-body {
+  overflow: hidden;
+}
+
+.irt .sheet-body .tab {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.irt .resource-label {
+  font-weight: bold;
+}
+
+.irt .items-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  color: #444;
+}
+
+.irt .items-list .item-header {
+  padding: 5px;
+  margin: 2px 0;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #AAA;
+  font-weight: bold;
+}
+
+.irt .items-list .item {
+  padding: 3px;
+  border-bottom: 1px solid #BBB;
+}
+
+.irt .items-list .item:last-child {
+  border-bottom: none;
+}
+
+.irt .items-list .item-name {
+  color: #191813;
+  margin: 0;
+}
+
+.irt .items-list .item-controls {
+  flex: 0 0 36px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.irt .items-list .item-controls a {
+  flex: 0 0 18px;
+  text-align: center;
+  color: #7a7971;
+}
+
+.irt .items-list .item-controls a:hover {
+  color: #111;
+  text-shadow: 0 0 4px red;
+}
+
+.irt .ability {
+    margin: 5px 0;
+}
+.irt .ability label {
+    flex: 2;
+}
+.irt .ability input {
+    flex: 1;
+    text-align: center;
+}
