@@ -1,26 +1,16 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": ["character"],
     "character": {
       "attributes": {
-        "strid": { "value": 0, "label": "Strid" },
-        "fysik": { "value": 0, "label": "Fysik" },
-        "smidighet": { "value": 0, "label": "Smidighet" },
-        "analys": { "value": 0, "label": "Analys" },
-        "list": { "value": 0, "label": "List" },
-        "samspel": { "value": 0, "label": "Samspel" },
-        "vilja": { "value": 0, "label": "Vilja" }
-      }
-    },
-    "npc": {
-      "attributes": {
-        "strid": { "value": 0, "label": "Strid" },
-        "fysik": { "value": 0, "label": "Fysik" },
-        "smidighet": { "value": 0, "label": "Smidighet" },
-        "analys": { "value": 0, "label": "Analys" },
-        "list": { "value": 0, "label": "List" },
-        "samspel": { "value": 0, "label": "Samspel" },
-        "vilja": { "value": 0, "label": "Vilja" }
+        "combat": { "value": 0 },
+        "physique": { "value": 0 },
+        "agility": { "value": 0 },
+        "senses": { "value": 0 },
+        "analysis": { "value": 0 },
+        "cunning": { "value": 0 },
+        "interaction": { "value": 0 },
+        "will": { "value": 0 }
       }
     }
   },

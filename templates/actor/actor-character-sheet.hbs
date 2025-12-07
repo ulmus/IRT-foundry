@@ -1,4 +1,8 @@
-<form class="{{cssClass}} {{actor.type}} flexcol" autocomplete="off">
+<form class="{{cssClass}} {{actor.type}} flex flex-col h-full" autocomplete="off">
+
+  <div class="header-banner flex-none w-full">
+    <img src="systems/irt/assets/Header.png" title="I Rikets Tjänst"/>
+  </div>
 
   {{!-- Sheet Header --}}
   <header class="sheet-header">
@@ -10,8 +14,8 @@
 
   {{!-- Sheet Tab Navigation --}}
   <nav class="sheet-tabs tabs" data-group="primary">
-    <a class="item" data-tab="attributes">Attributes</a>
-    <a class="item" data-tab="items">Items</a>
+    <a class="item" data-tab="attributes">{{localize "IRT.Attributes"}}</a>
+    <a class="item" data-tab="items">{{localize "IRT.Items"}}</a>
   </nav>
 
   {{!-- Sheet Body --}}
@@ -19,20 +23,51 @@
 
     {{!-- Attributes Tab --}}
     <div class="tab attributes" data-group="primary" data-tab="attributes">
-        <div class="abilities flexcol">
-            {{#each system.attributes as |attribute key|}}
-            <div class="ability flexrow flex-group-center">
-              <label for="system.attributes.{{key}}.value" class="resource-label">{{attribute.label}}</label>
-              <input type="text" name="system.attributes.{{key}}.value" value="{{attribute.value}}" data-dtype="Number"/>
+        <div class="attributes-grid">
+            <div class="flex flex-col gap-2">
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.combat.value" class="resource-label">{{localize "IRT.AttributeCombat"}}</label>
+                  <input type="text" name="system.attributes.combat.value" value="{{system.attributes.combat.value}}" data-dtype="Number"/>
+                </div>
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.physique.value" class="resource-label">{{localize "IRT.AttributePhysique"}}</label>
+                  <input type="text" name="system.attributes.physique.value" value="{{system.attributes.physique.value}}" data-dtype="Number"/>
+                </div>
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.agility.value" class="resource-label">{{localize "IRT.AttributeAgility"}}</label>
+                  <input type="text" name="system.attributes.agility.value" value="{{system.attributes.agility.value}}" data-dtype="Number"/>
+                </div>
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.senses.value" class="resource-label">{{localize "IRT.AttributeSenses"}}</label>
+                  <input type="text" name="system.attributes.senses.value" value="{{system.attributes.senses.value}}" data-dtype="Number"/>
+                </div>
             </div>
-            {{/each}}
+
+            <div class="flex flex-col gap-2">
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.analysis.value" class="resource-label">{{localize "IRT.AttributeAnalysis"}}</label>
+                  <input type="text" name="system.attributes.analysis.value" value="{{system.attributes.analysis.value}}" data-dtype="Number"/>
+                </div>
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.cunning.value" class="resource-label">{{localize "IRT.AttributeCunning"}}</label>
+                  <input type="text" name="system.attributes.cunning.value" value="{{system.attributes.cunning.value}}" data-dtype="Number"/>
+                </div>
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.interaction.value" class="resource-label">{{localize "IRT.AttributeInteraction"}}</label>
+                  <input type="text" name="system.attributes.interaction.value" value="{{system.attributes.interaction.value}}" data-dtype="Number"/>
+                </div>
+                <div class="ability flex flex-row items-center gap-2">
+                  <label for="system.attributes.will.value" class="resource-label">{{localize "IRT.AttributeWill"}}</label>
+                  <input type="text" name="system.attributes.will.value" value="{{system.attributes.will.value}}" data-dtype="Number"/>
+                </div>
+            </div>
         </div>
     </div>
 
     {{!-- Owned Items Tab --}}
     <div class="tab items" data-group="primary" data-tab="items">
         <ol class="items-list">
-            <li class="item flexrow item-header">
+            <li class="item flex flex-row items-center item-header">
               <div class="item-image"></div>
               <div class="item-name">Name</div>
               <div class="item-controls">
@@ -40,7 +75,7 @@
               </div>
             </li>
             {{#each gear as |item id|}}
-            <li class="item flexrow" data-item-id="{{item._id}}">
+            <li class="item flex flex-row items-center" data-item-id="{{item._id}}">
               <div class="item-image"><img src="{{item.img}}" title="{{item.name}}" width="24" height="24"/></div>
               <h4 class="item-name">{{item.name}}</h4>
               <div class="item-controls">

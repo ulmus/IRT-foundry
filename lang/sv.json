@@ -1,0 +1,12 @@
+{
+  "IRT.Attributes": "Egenskaper",
+  "IRT.Items": "Föremål",
+  "IRT.AttributeCombat": "Strid",
+  "IRT.AttributePhysique": "Fysik",
+  "IRT.AttributeAgility": "Smidighet",
+  "IRT.AttributeSenses": "Sinnen",
+  "IRT.AttributeAnalysis": "Analys",
+  "IRT.AttributeCunning": "List",
+  "IRT.AttributeInteraction": "Samspel",
+  "IRT.AttributeWill": "Vilja"
+}

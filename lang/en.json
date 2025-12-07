@@ -1,0 +1,12 @@
+{
+  "IRT.Attributes": "Attributes",
+  "IRT.Items": "Items",
+  "IRT.AttributeCombat": "Combat",
+  "IRT.AttributePhysique": "Physique",
+  "IRT.AttributeAgility": "Agility",
+  "IRT.AttributeSenses": "Senses",
+  "IRT.AttributeAnalysis": "Analysis",
+  "IRT.AttributeCunning": "Cunning",
+  "IRT.AttributeInteraction": "Interaction",
+  "IRT.AttributeWill": "Will"
+}

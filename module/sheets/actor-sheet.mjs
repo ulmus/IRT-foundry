@@ -17,7 +17,7 @@ export class IrtActorSheet extends ActorSheet {
 
   /** @override */
   get template() {
-    return `systems/irt/templates/actor/actor-${this.actor.type}-sheet.hbs`;
+    return `systems/irt/templates/actor/actor-character-sheet.hbs`;
   }
 
   /** @override */
@@ -39,11 +39,6 @@ export class IrtActorSheet extends ActorSheet {
     if (actorData.type == 'character') {
       this._prepareItems(context);
       this._prepareCharacterData(context);
-    }
-
-    // Prepare NPC data and items.
-    if (actorData.type == 'npc') {
-      this._prepareItems(context);
     }
 
     return context;
